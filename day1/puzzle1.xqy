@@ -1,4 +1,6 @@
-let $doc := fn:doc("/aoc/day1/file.txt")
+(:have to load the input file (aoc-2023/day1/inputfile.txt) into database (I used MarkLogic):)
+
+let $doc := fn:doc("/aoc-2023/day1/inputfile.txt")
 let $lines := fn:tokenize($doc,"\n")
 let $numbers := (0 to 9)
 
