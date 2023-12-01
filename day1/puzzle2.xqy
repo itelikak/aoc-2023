@@ -1,4 +1,6 @@
-let $doc := fn:doc("/aoc/day1/file.txt")
+(:have to load the input file (aoc-2023/day1/inputfile.txt) into database (I used MarkLogic):)
+
+let $doc := fn:doc("/aoc-2023/day1/inputfile.txt")
 let $lines := fn:tokenize($doc,"\n")
 let $num-list := ("1","2","3","4","5","6","7","8","9")
 let $updated-numbers := for $line in $lines
